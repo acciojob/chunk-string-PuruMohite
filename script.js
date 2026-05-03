@@ -3,7 +3,7 @@ function stringChop(str, size) {
   let n = str.length;
   let i=0;
   let ans = [];  
-  if(typeof str == null || n==0){
+  if(str == null || n==0){
 	  return [];
   }
   while(i<n){
@@ -19,7 +19,7 @@ function stringChop(str, size) {
 }
 
 // Do not change the code below
-// const str = prompt("Enter String.");
-// const size = prompt("Enter Chunk Size.");
+const str = prompt("Enter String.");
+const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, Number(size)));
 
