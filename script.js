@@ -3,8 +3,8 @@ function stringChop(str, size) {
   let n = str.length;
   let i=0;
   let ans = [];  
-  if(n==0 || str==null){
-	  return ans;
+  if(typeof str == null || n==0){
+	  return [];
   }
   while(i<n){
     if(i+size < n){
